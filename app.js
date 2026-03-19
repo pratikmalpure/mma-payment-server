@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 app.post('/create-order', async (req, res) => {
   try {
     const options = {
-      amount: 10 * 100, // ₹1000 in paise
+      amount: 1000 * 100, // ₹1000 in paise
       currency: 'INR',
       receipt: `receipt_${Date.now()}`,
       payment_capture: true, // autocapture ON
